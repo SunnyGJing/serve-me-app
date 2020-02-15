@@ -19,14 +19,6 @@ const routes: Routes = [
             path: 'search-vendor',
             loadChildren: () =>
                 import('../search-vendor/search-vendor.module').then(m => m.SearchVendorPageModule)
-          },
-          {
-            path: 'service-detail',
-            loadChildren: () => import('../service-detail/service-detail.module').then( m => m.ServiceDetailPageModule)
-          },
-          {
-            path: 'set-order',
-            loadChildren: () => import('../set-order/set-order.module').then( m => m.SetOrderPageModule)
           }
         ]
       },
@@ -37,14 +29,6 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
                 import('../order/order.module').then(m => m.OrderPageModule)
-          },
-          {
-            path: 'order-update',
-            loadChildren: () => import('../order-update/order-update.module').then( m => m.OrderUpdatePageModule)
-          },
-          {
-            path: 'order-review',
-            loadChildren: () => import('../order-review/order-review.module').then( m => m.OrderReviewPageModule)
           }
         ]
       },
@@ -71,26 +55,6 @@ const routes: Routes = [
           {
             path: 'personal-info',
             loadChildren: () => import('../personal-info/personal-info.module').then( m => m.PersonalInfoPageModule)
-          },
-          {
-            path: 'point',
-            loadChildren: () => import('../point/point.module').then( m => m.PointPageModule)
-          },
-          {
-            path: 'vendor-order',
-            loadChildren: () => import('../vendor-order/vendor-order.module').then( m => m.VendorOrderPageModule)
-          },
-          {
-            path: 'vendor-service',
-            loadChildren: () => import('../vendor-service/vendor-service.module').then( m => m.VendorServicePageModule)
-          },
-          {
-            path: 'vendor-service-add',
-            loadChildren: () => import('../vendor-service-add/vendor-service-add.module').then( m => m.VendorServiceAddPageModule)
-          },
-          {
-            path: 'vendor-service-update',
-            loadChildren: () => import('../vendor-service-update/vendor-service-update.module').then( m => m.VendorServiceUpdatePageModule)
           }
         ]
       },
